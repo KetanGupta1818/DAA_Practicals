@@ -1,0 +1,1 @@
+As this is a synchronization and resource allocation problem, it runs infinitely. To exit the program press "ctrl+c"
