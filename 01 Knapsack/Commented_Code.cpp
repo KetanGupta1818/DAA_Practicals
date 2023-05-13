@@ -1,5 +1,5 @@
 /*
-In 0/1 knapsnack we have to options at any state
+In 0/1 knapsnack we have two options at any state
     1) dont select current state (0)
     2) select current state (1)
 */
