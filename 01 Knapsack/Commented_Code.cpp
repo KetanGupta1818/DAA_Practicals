@@ -19,10 +19,10 @@ long long solve(int index, int wr, int weights[], int profits[], vector<vector<l
     //If this state is seen before then return the value which was previously calculated
     if(dp[index][wr] != -1) return dp[index][wr];
   
-    //Do not select the current state
+    //Do not select the current element
     long long p = solve(index+1,wr,weights,profits,dp,n);
   
-    //Select the current state if remaining weight is greater than current weight
+    //Select the current element if remaining weight is greater than or equal to current weight
     if(weights[index]<=wr) p = max(p,solve(index+1,wr-weights[index],weights,profits,dp,n)+profits[index]);
   
     //store the value in dp matrix
