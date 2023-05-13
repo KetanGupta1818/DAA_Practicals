@@ -9,7 +9,7 @@ In 0/1 knapsnack we have two options at any state
 using namespace std;
 /*
 DP state dp[index][wr]
-index -> represents element 
+index -> represents element index
 wr -> weight remaining with us (the total weight which we can add to our kanpsack) 
 */
 long long solve(int index, int wr, int weights[], int profits[], vector<vector<long long>>& dp,int n){
