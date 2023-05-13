@@ -34,12 +34,12 @@ private:
     }
 
     void pickLeftChopStick() {
-        if (sem_wait(left_chopstick) == 0) cout << "Philosopher " << id << " is HOLDING left chopstick." << endl;
-        else cout << "philosopher " << id << " is waiting for left chopstick" << endl;
+         if (sem_wait(left_chopstick) == 0) cout << "philosopher " << id << " is waiting for left chopstick" << endl;
+        else cout << "Philosopher " << id << " is HOLDING left chopstick." << endl;
     }
     void pickRightChopStick() {
-        if (sem_wait(right_chopstick) == 0) cout << "Philosopher " << id << " is HOLDING right chopstick." << endl;
-        else cout << "philosopher " << id << " is waiting for right chopstick" << endl;
+        if (sem_wait(right_chopstick) == 0) cout << "philosopher " << id << " is waiting for right chopstick" << endl;
+        else cout << "Philosopher " << id << " is HOLDING right chopstick." << endl;
     }
 
     void eat() {
